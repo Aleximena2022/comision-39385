@@ -13,21 +13,21 @@ TIPOGRAFIAS
  /* font-family: 'Roboto', sans-serif; */
 
 
- .contenedor-catalogo{
-     width: 100%;
-     background:white;
-     display: flex;
-     justify-content: space-between;
-     flex-wrap: wrap;
-     height: fit-content;
-     text-align: center;
-     font-size: 40px;
+.contenedor-catalogo{
+    width: 100%;
+    background:white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: fit-content;
+    text-align: center;
+    font-size: 40px;
 
- }
+}
 
- .talles-adultos{
-     height: 900px;
- }
+.talles-adultos{
+    height: 900px;
+}
 
 .contenedor-imagenes-hombres{
     display:flex;
@@ -43,6 +43,11 @@ TIPOGRAFIAS
     display:flex;
     flex-wrap: wrap;
 }
+
+.catalogo-seccion{
+    background-color: grey;
+}
+
  .contenedor-envios{
     font-size: 0.5em;
  }
