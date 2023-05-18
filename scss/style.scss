@@ -1,3 +1,7 @@
+/*Variables*/
+$backgroundcontainerinfo: #F2F47F;
+$urlimgliqtotal: url(../assets/img/seccion_liquidacion_del_index/zapas_todas.jpg);
+
 .navbar{
     display: flex;
     background-color: black;
@@ -39,7 +43,7 @@
 
 .grid-section-liquidaciontotal{
     display: grid;
-    background-image: url(../assets/img/seccion_liquidacion_del_index/zapas_todas.jpg);
+    background-image: $urlimgliqtotal;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -210,7 +214,7 @@ h3{
 }
 
 .containerInfo{
-    background-color:#F2F47F ;
+    background-color:$backgroundcontainerinfo ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,15 +274,16 @@ footer {
     
 }
 
-.redes-sociales ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding: 0;
-    gap: 3%;
-    align-items: center;
+.redes-sociales {
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+        gap: 3%;
+        align-items: center;
+    }
 }
-
 
 .main_index{
     display: grid;
@@ -313,44 +318,42 @@ footer {
     align-self: center;
     font-size: 50px;
     text-align: center;
-    h2{
-        letter-spacing: 20px;
-        font-size: 60px;
-    } 
+        h2{
+            letter-spacing: 20px;
+            font-size: 60px;
+        } 
 } 
 .section_3 {
     grid-area: p2;
     overflow: hidden;
     text-align: center;
-    img{
-        object-fit:cover;
-        width: 40%;
-        height: 70%;
-    
-    }
+        img{
+            object-fit:cover;
+            width: 40%;
+            height: 70%;
+        }
 }
 
 .section_4 {
     grid-area: p4;
     overflow: hidden;
     text-align: center;
-    img{
-        object-fit:cover;
-        width: 65%;
-        height: 80%;
-    
-    }
+        img{
+            object-fit:cover;
+            width: 65%;
+            height: 80%;
+        }
 }
 
 .section_5{
     grid-area: p5;
     overflow: hidden;
     text-align: center;
-    img{
-        object-fit:cover;
-        width: 53%;
-        height: 85%;
-    }
+        img{
+            object-fit:cover;
+            width: 53%;
+            height: 85%;
+        }
 }
 
 
@@ -359,11 +362,11 @@ footer {
     grid-area: p6;
     overflow: hidden;
     text-align: center;
-    img{
-        object-fit:cover;
-        width: 53%;
-        height: 75%;
-    }
+        img{
+            object-fit:cover;
+            width: 53%;
+            height: 75%;
+        }
 }
 
 
@@ -372,11 +375,11 @@ footer {
     grid-area: p7;
     overflow: hidden;
     text-align: center;
-    img{
-        object-fit:cover;
-        width: 53%;
-        height: 55%;
-    }
+        img{
+            object-fit:cover;
+            width: 53%;
+            height: 55%;
+        }
 }
 
 
@@ -386,11 +389,11 @@ footer {
     justify-self: center;
     align-self: center;
     text-align: center;
-    h2{
-        letter-spacing: 20px;
-        font-size: 30px;
-        color:red;
-    } 
+        h2{
+            letter-spacing: 20px;
+            font-size: 30px;
+            color:red;
+        } 
 } 
 
 
@@ -399,11 +402,11 @@ footer {
     justify-self: center;
     align-self: center;
     text-align: center;
-    h2{
-        letter-spacing: 20px;
-        font-size: 30px;
-        color:violet;
-    } 
+        h2{
+            letter-spacing: 20px;
+            font-size: 30px;
+            color:violet;
+        } 
 } 
 
 
@@ -413,10 +416,10 @@ footer {
         align-self: center;
         font-size: 50px;
         text-align: center;
-        h2{
-            letter-spacing: 20px;
-            font-size: 60px;
-            color: blue;
-        }
-    } 
+            h2{
+                letter-spacing: 20px;
+                font-size: 60px;
+                color: blue;
+            }
+} 
 
