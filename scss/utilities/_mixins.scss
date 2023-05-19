@@ -1,0 +1,9 @@
+@mixin catalog{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+@mixin catalog1{
+    text-align: center;
+    font-size: 40px;
+}

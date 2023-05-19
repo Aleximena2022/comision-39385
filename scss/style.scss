@@ -1,5 +1,7 @@
 @import "./utilities/variables";
 @import "./base/reset";
+@import "./utilities/mixins";
+@import "./components/botones";
 @import "./layout/main-ofertas";
 @import "./layout/footer";
 
@@ -67,21 +69,6 @@ h1{
     align-items: center;
 }
 
-.boton {
-    display: grid;
-    background-color: red; 
-    border: none;
-    padding: 10px 20px;
-    font-size: 30px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 4px;
-    a {
-        text-decoration: none;
-        color:white;
-    }
-}
-
 .sectionEnvioGratis{
     display: flex;
     background-color: black;
@@ -112,18 +99,15 @@ h1{
 }
 
 .contenedor-imagenes-hombres{
-    display:flex;
-    flex-wrap: wrap;
+    @include catalog;
 }
 
 .contenedor-imagenes-mujeres{
-    display:flex;
-    flex-wrap: wrap;
+    @include catalog;
 }
 
 .contenedor-imagenes-niños{
-    display:flex;
-    flex-wrap: wrap;
+    @include catalog;
 }
 
 .catalogo-seccion{
@@ -135,13 +119,11 @@ h1{
 }
 
 .contenedor-envios{
-    display: flex;
-    flex-wrap: wrap;
+    @include catalog;
 }
 
 .container-fluid{
-    display: flex;
-    flex-wrap: wrap;
+    @include catalog;
     justify-content: space-between;
 }
 
@@ -158,18 +140,15 @@ h1{
 }
 
 .hombre{
-    text-align: center;
-    font-size: 40px;
+    @include catalog1;
 }
 
 .mujer{
-    text-align: center;
-    font-size: 40px;
+    @include catalog1;
 }
 
 .niños{
-    text-align: center;
-    font-size: 40px;
+    @include catalog1;
 }
 
 .box{
