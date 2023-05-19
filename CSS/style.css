@@ -2,7 +2,6 @@
 /*Variables*/
 .navbar {
   display: flex;
-  background-color: black;
   align-items: center;
   justify-content: space-between;
   width: 100%; }
