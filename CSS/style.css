@@ -333,3 +333,108 @@ h3 {
     color: red;
     text-decoration: none;
     font-size: 30px; }
+
+/*mediaquery 2560 4K*/
+@media (max-width: 2560px) {
+  .imagen-achicada {
+    width: 450px;
+    /* Establece el ancho deseado */
+    height: auto;
+    /* El alto se ajustará automáticamente para mantener la proporción */ } }
+
+/*mediaquery 1440*/
+@media (max-width: 1440px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; }
+    .navbar li a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px; }
+  .contenedor-logo {
+    display: flex;
+    height: 80px;
+    padding-left: 2%; }
+  .contenedor-lista {
+    display: flex;
+    align-items: center; }
+  .lista {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 35px;
+    padding-right: 150px; }
+    .lista li a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px; }
+  .imagen-achicada {
+    width: 300px;
+    /* Establece el ancho deseado */
+    height: auto;
+    /* El alto se ajustará automáticamente para mantener la proporción */ } }
+
+/*mediaquery 1024*/
+@media (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; }
+    .navbar li a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px; }
+  .contenedor-logo {
+    display: flex;
+    height: 70px;
+    padding-left: 2%; }
+  .contenedor-lista {
+    display: flex;
+    align-items: center; }
+  .lista {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 30px;
+    padding-right: 100px; }
+    .lista li a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px; }
+  .imagen-achicada {
+    width: 250px;
+    /* Establece el ancho deseado */
+    height: auto;
+    /* El alto se ajustará automáticamente para mantener la proporción */ } }
+
+/*mediaquery 768px*/
+@media (max-width: 780px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; }
+    .navbar li a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px; }
+  .contenedor-logo {
+    display: flex;
+    height: 50px;
+    padding-left: 2%; }
+  .contenedor-lista {
+    display: flex;
+    align-items: center; }
+  .lista {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+    padding-right: 100px; }
+    .lista li a {
+      color: white;
+      text-decoration: none;
+      font-size: 13px; } }
