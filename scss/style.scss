@@ -214,6 +214,36 @@ h3{
 /*mediaquery 2560 4K*/
 @media(max-width:2560px){
 
+    header{
+        display: flex;
+        background-color: black;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 200px;
+            height: 100px;
+            
+            
+    
+        }
+    }
+    
+    
+    
+    .lista{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 35px;
+        padding-right:100px;
+            li a{
+                color: white;
+                text-decoration: none;
+                font-size: 35px;
+        }
+    }
+
 .imagen-achicada {
     width: 450px; /* Establece el ancho deseado */
     height: auto; /* El alto se ajustará automáticamente para mantener la proporción */
@@ -226,46 +256,77 @@ h3{
 
 @media(max-width:1440px){
 	
-	.navbar{
+// 	.navbar{
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     width: 100%;
+//     li {
+//         a{
+//             text-decoration: none;
+//             color:white;
+//             font-size: 20px;
+//         }
+//     }
+// }
+
+// .contenedor-logo{
+//     display: flex;
+//     height: 80px;
+//     padding-left: 2%;
+// }
+
+// .contenedor-lista{
+//     display: flex;
+//     align-items:center;
+// }
+
+// .lista{
+//     display: flex;
+//     flex-direction: row;
+//     list-style: none;
+//     gap: 35px;
+//     padding-right:150px;
+//         li a{
+//             color: white;
+//             text-decoration: none;
+//             font-size: 20px;
+//         }
+//     }
+
+
+header{
     display: flex;
-    align-items: center;
+    background-color: black;
+    flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    li {
-        a{
-            text-decoration: none;
-            color:white;
-            font-size: 20px;
-        }
+    align-items: center;
+    img{
+        width: 100px;
+        height: 50px;
+        
+        
+
     }
 }
 
-.contenedor-logo{
-    display: flex;
-    height: 80px;
-    padding-left: 2%;
-}
 
-.contenedor-lista{
-    display: flex;
-    align-items:center;
-}
 
 .lista{
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 35px;
-    padding-right:150px;
+    gap: 25px;
+    padding-right:100px;
         li a{
             color: white;
             text-decoration: none;
-            font-size: 20px;
-        }
+            font-size: 15px;
     }
+}
 
 .imagen-achicada {
-    width: 300px; /* Establece el ancho deseado */
+    width: 342px; /* Establece el ancho deseado */
     height: auto; /* El alto se ajustará automáticamente para mantener la proporción */
 }
 }
@@ -275,90 +336,162 @@ h3{
 
 @media(max-width:1024px){
 	
-	.navbar{
+// 	.navbar{
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     width: 100%;
+//     li {
+//         a{
+//             text-decoration: none;
+//             color:white;
+//             font-size: 20px;
+//         }
+//     }
+// }
+
+// .contenedor-logo{
+//     display: flex;
+//     height: 70px;
+//     padding-left: 2%;
+// }
+
+// .contenedor-lista{
+//     display: flex;
+//     align-items:center;
+// }
+
+// .lista{
+//     display: flex;
+//     flex-direction: row;
+//     list-style: none;
+//     gap: 30px;
+//     padding-right:100px;
+//         li a{
+//             color: white;
+//             text-decoration: none;
+//             font-size: 14px;
+//         }
+// }
+
+header{
     display: flex;
-    align-items: center;
+    background-color: black;
+    flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    li {
-        a{
-            text-decoration: none;
-            color:white;
-            font-size: 20px;
-        }
+    align-items: center;
+    img{
+        width: 100px;
+        height: 50px;
+        
+        
+
     }
 }
 
-.contenedor-logo{
-    display: flex;
-    height: 70px;
-    padding-left: 2%;
-}
 
-.contenedor-lista{
-    display: flex;
-    align-items:center;
-}
 
 .lista{
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 30px;
+    gap: 25px;
     padding-right:100px;
         li a{
             color: white;
             text-decoration: none;
-            font-size: 14px;
-        }
+            font-size: 15px;
+    }
 }
 
+
 .imagen-achicada {
-    width: 250px; /* Establece el ancho deseado */
-    height: auto; /* El alto se ajustará automáticamente para mantener la proporción */
+    width: 250px; 
+    height: auto; 
 }
+
+
+
+
 
 }
 
                             /*mediaquery 768px*/
 @media(max-width:780px){
 	
-	.navbar{
+// 	.navbar{
+//     display: flex;
+//     align-items: center;
+//     justify-content:flex-end;
+//     width: 100%;
+//     li {
+//         a{
+//             text-decoration: none;
+//             color:white;
+//             font-size: 15px;
+//         }
+//     }
+// }
+
+header{
     display: flex;
-    align-items: center;
+    background-color: black;
+    flex-direction: column;
     justify-content: space-between;
-    width: 100%;
-    li {
-        a{
-            text-decoration: none;
-            color:white;
-            font-size: 15px;
-        }
+    align-items: center;
+    img{
+        width: 100px;
+        height: 50px;
+        
+        
+
     }
 }
 
-.contenedor-logo{
-    display: flex;
-    height: 50px;
-    padding-left: 2%;
-}
 
-.contenedor-lista{
-    display: flex;
-    align-items:center;
-}
 
 .lista{
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 10px;
+    gap: 25px;
     padding-right:100px;
         li a{
             color: white;
             text-decoration: none;
-            font-size: 13px;
+            font-size: 15px;
+    }
+}
+
+.grid-section-liquidaciontotal{
+        h1{
+            font-size: 35px;
         }
 }
+
+.boton {
+    display: grid;
+    background-color: red; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    a {
+        text-decoration: none;
+        color:white;
+    }
+}
+
+
+
+
+.imagen-achicada {
+    width: 130px; 
+    height: auto; 
+}
+
+
 
 }
