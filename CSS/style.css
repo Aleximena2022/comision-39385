@@ -156,16 +156,6 @@ footer {
   gap: 3%;
   align-items: center; }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%; }
-  .navbar li a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px; }
-
 .contenedor-logo {
   display: flex;
   height: 90px;
@@ -292,7 +282,7 @@ h1 {
   justify-content: space-between; }
 
 .card {
-  width: 12%;
+  width: 10%;
   height: 300px;
   border: 3px solid white;
   text-align: center;
@@ -310,8 +300,8 @@ h1 {
     width: 100%;
     border-radius: 15px; }
 
-h3 {
-  font-size: 60px;
+.tituloOfertas p {
+  font-size: 75px;
   text-align: center; }
 
 .sectionInfo {
@@ -333,6 +323,21 @@ h3 {
     color: red;
     text-decoration: none;
     font-size: 30px; }
+
+footer {
+  background-color: black;
+  padding: 20px; }
+
+.row-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.ubicacion-local,
+.telefono-contacto,
+.redes-sociales {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 10px; }
 
 /*mediaquery 2560 4K*/
 @media (max-width: 2560px) {
@@ -370,8 +375,8 @@ h3 {
     justify-content: space-between;
     align-items: center; }
     header img {
-      width: 100px;
-      height: 50px; }
+      width: 200px;
+      height: 100px; }
   .lista {
     display: flex;
     flex-direction: row;
@@ -381,7 +386,7 @@ h3 {
     .lista li a {
       color: white;
       text-decoration: none;
-      font-size: 15px; }
+      font-size: 25px; }
   .imagen-achicada {
     width: 342px;
     /* Establece el ancho deseado */
@@ -397,8 +402,8 @@ h3 {
     justify-content: space-between;
     align-items: center; }
     header img {
-      width: 100px;
-      height: 50px; }
+      width: 130px;
+      height: 80px; }
   .lista {
     display: flex;
     flex-direction: row;
@@ -408,7 +413,7 @@ h3 {
     .lista li a {
       color: white;
       text-decoration: none;
-      font-size: 15px; }
+      font-size: 18px; }
   .imagen-achicada {
     width: 250px;
     height: auto; } }
@@ -417,6 +422,8 @@ h3 {
 @media (max-width: 780px) {
   header {
     display: flex;
+    width: 100%;
+    overflow: hidden;
     background-color: black;
     flex-direction: column;
     justify-content: space-between;
@@ -428,8 +435,9 @@ h3 {
     display: flex;
     flex-direction: row;
     list-style: none;
-    gap: 25px;
-    padding-right: 100px; }
+    gap: 10px;
+    padding-right: 100px;
+    overflow: hidden; }
     .lista li a {
       color: white;
       text-decoration: none;
@@ -450,4 +458,110 @@ h3 {
       color: white; }
   .imagen-achicada {
     width: 130px;
-    height: auto; } }
+    height: auto; }
+  .contenedor-envios {
+    overflow: hidden; }
+    .contenedor-envios p {
+      font-size: 13px;
+      gap: 5px; } }
+
+/*Mediaquery 320px*/
+@media (max-width: 320px) {
+  header {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    header img {
+      width: 100px;
+      height: 50px; }
+  .navbar {
+    display: flex; }
+  .lista {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 15px;
+    text-align: right; }
+  .lista li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 25px;
+    /* Ajusta el valor según tus necesidades */ }
+  .grid-section-liquidaciontotal h1 {
+    font-size: 35px;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); }
+  .boton {
+    display: grid;
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px; }
+    .boton a {
+      text-decoration: none;
+      color: white; }
+  .imagen-achicada {
+    width: 130px;
+    height: auto; }
+  .contenedor-envios p {
+    font-size: 13px;
+    gap: 5px; }
+  .sectionCatalog {
+    display: none; }
+  .tituloOfertas p {
+    font-size: 25px; }
+  .card {
+    width: 250px;
+    height: 200px;
+    border: 3px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: serif;
+    margin: 40px 40px 30px 30px;
+    background-color: white; }
+    .card div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px; }
+    .card img {
+      width: 150px;
+      height: 100px;
+      border-radius: 25px; }
+  .cardprincipal {
+    display: none; }
+  .cardsegunda {
+    display: none; }
+  .envios P {
+    font-size: 15px; }
+  .tarjetaCredito p {
+    font-size: 13px; }
+  .devoluciones p {
+    font-size: 13px; }
+  .irAlTop a {
+    font-size: 20px; }
+  .row-grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .ubicacion-local,
+  .telefono-contacto,
+  .redes-sociales {
+    flex-basis: 50%; }
+    .ubicacion-local p,
+    .telefono-contacto p,
+    .redes-sociales p {
+      font-size: 15px; } }
+
+.redes {
+  display: flex;
+  justify-content: center; }
