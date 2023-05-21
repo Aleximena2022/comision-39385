@@ -381,9 +381,32 @@ footer {
       font-size: 25px; }
   .imagen-achicada {
     width: 342px;
-    /* Establece el ancho deseado */
-    height: auto;
-    /* El alto se ajustará automáticamente para mantener la proporción */ } }
+    height: auto; } }
+
+.tituloOfertas p {
+  font-size: 45px;
+  text-shadow: 3px 3px 5px forestgreen; }
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.cardprincipal,
+.cardsegunda,
+.cardtercera,
+.cardcuarta,
+.cardquinta {
+  flex-basis: calc(20% - 20px);
+  margin-bottom: 20px;
+  text-align: center; }
+
+.cardprincipal img,
+.cardsegunda img,
+.cardtercera img,
+.cardcuarta img,
+.cardquinta img {
+  max-width: 100%; }
 
 /*mediaquery 1024*/
 @media (max-width: 1024px) {
@@ -408,7 +431,28 @@ footer {
       font-size: 18px; }
   .imagen-achicada {
     width: 250px;
-    height: auto; } }
+    height: auto; }
+  .tituloOfertas p {
+    font-size: 45px;
+    text-shadow: 3px 3px 5px forestgreen; }
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .cardprincipal,
+  .cardsegunda,
+  .cardtercera,
+  .cardcuarta,
+  .cardquinta {
+    flex-basis: calc(20% - 20px);
+    margin-bottom: 20px;
+    text-align: center; }
+  .cardprincipal img,
+  .cardsegunda img,
+  .cardtercera img,
+  .cardcuarta img,
+  .cardquinta img {
+    max-width: 100%; } }
 
 /*mediaquery 768px*/
 @media (max-width: 780px) {
@@ -450,28 +494,11 @@ footer {
     .boton a {
       text-decoration: none;
       color: white; }
-  .imagen-achicada {
-    width: 130px;
-    height: auto; }
   .contenedor-envios {
     overflow: hidden; }
     .contenedor-envios p {
       font-size: 15px;
       gap: 5px; }
-  .contenedor-catalogo {
-    width: 100%;
-    background: white;
-    display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
-    text-align: center;
-    font-size: 30px; }
-  .contenedor-img {
-    display: flex; }
-    .contenedor-img img {
-      width: 245px;
-      height: 145px;
-      flex-basis: auto; }
   .tituloOfertas p {
     font-size: 45px;
     text-shadow: 3px 3px 5px forestgreen; }

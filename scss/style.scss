@@ -273,45 +273,6 @@ footer {
 
 
 @media(max-width:1440px){
-	
-// 	.navbar{
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     width: 100%;
-//     li {
-//         a{
-//             text-decoration: none;
-//             color:white;
-//             font-size: 20px;
-//         }
-//     }
-// }
-
-// .contenedor-logo{
-//     display: flex;
-//     height: 80px;
-//     padding-left: 2%;
-// }
-
-// .contenedor-lista{
-//     display: flex;
-//     align-items:center;
-// }
-
-// .lista{
-//     display: flex;
-//     flex-direction: row;
-//     list-style: none;
-//     gap: 35px;
-//     padding-right:150px;
-//         li a{
-//             color: white;
-//             text-decoration: none;
-//             font-size: 20px;
-//         }
-//     }
-
 
 header{
     display: flex;
@@ -344,53 +305,48 @@ header{
 }
 
 .imagen-achicada {
-    width: 342px; /* Establece el ancho deseado */
-    height: auto; /* El alto se ajustará automáticamente para mantener la proporción */
+    width: 342px; 
+    height: auto; 
 }
 }
+
+.tituloOfertas{
+    p{
+        font-size: 45px;
+        text-shadow: 3px 3px 5px forestgreen;
+    }
+}
+
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardprincipal,
+.cardsegunda,
+.cardtercera,
+.cardcuarta,
+.cardquinta {
+    flex-basis: calc(20% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cardprincipal img,
+.cardsegunda img,
+.cardtercera img,
+.cardcuarta img,
+.cardquinta img {
+    max-width: 100%;
+}
+
 
                     /*mediaquery 1024*/
 
 
 @media(max-width:1024px){
-	
-// 	.navbar{
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     width: 100%;
-//     li {
-//         a{
-//             text-decoration: none;
-//             color:white;
-//             font-size: 20px;
-//         }
-//     }
-// }
-
-// .contenedor-logo{
-//     display: flex;
-//     height: 70px;
-//     padding-left: 2%;
-// }
-
-// .contenedor-lista{
-//     display: flex;
-//     align-items:center;
-// }
-
-// .lista{
-//     display: flex;
-//     flex-direction: row;
-//     list-style: none;
-//     gap: 30px;
-//     padding-right:100px;
-//         li a{
-//             color: white;
-//             text-decoration: none;
-//             font-size: 14px;
-//         }
-// }
 
 header{
     display: flex;
@@ -428,6 +384,39 @@ header{
     height: auto; 
 }
 
+
+
+
+.tituloOfertas{
+    p{
+        font-size: 45px;
+        text-shadow: 3px 3px 5px forestgreen;
+    }
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardprincipal,
+.cardsegunda,
+.cardtercera,
+.cardcuarta,
+.cardquinta {
+    flex-basis: calc(20% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cardprincipal img,
+.cardsegunda img,
+.cardtercera img,
+.cardcuarta img,
+.cardquinta img {
+    max-width: 100%;
+}
 
 
 
@@ -497,10 +486,10 @@ header{
 
 
 
-.imagen-achicada {
-    width: 130px; 
-    height: auto; 
-}
+// .imagen-achicada {
+//     width: 130px; 
+//     height: auto; 
+// }
 
 .contenedor-envios{
     overflow: hidden;
@@ -510,25 +499,30 @@ header{
     }
 }
 
-.contenedor-catalogo{
-    width: 100%;
-    background:white;
-    display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
-    text-align: center;
-    font-size: 30px;
+// .contenedor-catalogo{
+//     width: 100%;
+//     background:white;
+//     display: flex;
+//     flex-wrap: wrap;
+//     height: fit-content;
+//     text-align: center;
+//     font-size: 30px;
         
-}
+// }
 
-.contenedor-img{
-    display: flex;
-    img{
-    width: 245px;
-    height: 145px;
-    flex-basis:auto;
-}
-}
+// .contenedor-img{
+//     display: flex;
+//     img{
+//     width: 245px;
+//     height: 145px;
+//     flex-basis:auto;
+// }
+// }
+
+
+
+
+
 
 .tituloOfertas{
     p{
@@ -784,21 +778,3 @@ header{
         display: flex;
         justify-content: center;
     }
-
-
-    
-
-
-
-    
-    // @media (max-width: 768px) {
-    //     .row-grid {
-    //         flex-direction: column;
-    //     }
-    
-    //     .ubicacion-local,
-    //     .telefono-contacto,
-    //     .redes-sociales {
-    //         flex-basis: 100%;
-    //     }
-    // }
