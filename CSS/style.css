@@ -156,6 +156,23 @@ footer {
   gap: 3%;
   align-items: center; }
 
+.lista li {
+  /* Estilos de los elementos de la lista */
+  opacity: 0;
+  /* Inicialmente ocultos */
+  transform: translateY(-20px);
+  /* Desplazamiento hacia arriba */
+  animation: fadeInUp 0.5s forwards;
+  animation-delay: 0.2s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
 .contenedor-logo {
   display: flex;
   height: 90px;
@@ -292,6 +309,9 @@ h1 {
     width: 100%;
     border-radius: 15px; }
 
+.card.card1.transform-effect {
+  transform: scale(0.9); }
+
 .tituloOfertas p {
   font-size: 75px;
   text-align: center; }
@@ -330,6 +350,12 @@ footer {
 .redes-sociales {
   flex-basis: calc(33.33% - 10px);
   margin-bottom: 10px; }
+
+.card {
+  transition: transform 0.3s ease; }
+
+.card:hover {
+  transform: scale(1.1); }
 
 /*mediaquery 2560 4K*/
 @media (max-width: 2560px) {
@@ -598,24 +624,24 @@ footer {
   .tituloOfertas p {
     font-size: 25px; }
   .card {
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 150px;
     border: 3px solid black;
     text-align: center;
     display: flex;
     flex-direction: column;
     font-family: serif;
-    margin: 40px 40px 30px 30px;
+    margin: 20px 20px 20px 20px;
     background-color: white; }
     .card div {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 5px; }
+      gap: 3px; }
     .card img {
-      width: 150px;
-      height: 100px;
-      border-radius: 25px; }
+      width: 100px;
+      height: 50px;
+      border-radius: 10px; }
   .cardprincipal {
     display: none; }
   .cardsegunda {
