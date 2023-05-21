@@ -216,7 +216,6 @@ h1 {
   width: 100%;
   background: white;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   height: fit-content;
   text-align: center;
@@ -273,13 +272,6 @@ h1 {
 .niños {
   text-align: center;
   font-size: 40px; }
-
-.box {
-  display: flex;
-  flex-flow: row wrap;
-  row-gap: 20px;
-  column-gap: 10px;
-  justify-content: space-between; }
 
 .card {
   width: 10%;
@@ -443,7 +435,9 @@ footer {
       text-decoration: none;
       font-size: 15px; }
   .grid-section-liquidaciontotal h1 {
-    font-size: 35px; }
+    font-size: 35px;
+    color: black;
+    text-shadow: 3px 3px 5px white; }
   .boton {
     display: grid;
     background-color: red;
@@ -462,8 +456,67 @@ footer {
   .contenedor-envios {
     overflow: hidden; }
     .contenedor-envios p {
-      font-size: 13px;
-      gap: 5px; } }
+      font-size: 15px;
+      gap: 5px; }
+  .contenedor-catalogo {
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    text-align: center;
+    font-size: 30px; }
+  .contenedor-img {
+    display: flex; }
+    .contenedor-img img {
+      width: 245px;
+      height: 145px;
+      flex-basis: auto; }
+  .tituloOfertas p {
+    font-size: 45px;
+    text-shadow: 3px 3px 5px forestgreen; }
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .cardprincipal,
+  .cardsegunda,
+  .cardtercera,
+  .cardcuarta,
+  .cardquinta {
+    flex-basis: calc(20% - 20px);
+    margin-bottom: 20px;
+    text-align: center; }
+  .cardprincipal img,
+  .cardsegunda img,
+  .cardtercera img,
+  .cardcuarta img,
+  .cardquinta img {
+    max-width: 100%; }
+  .envios P {
+    font-size: 15px; }
+  .tarjetaCredito p {
+    font-size: 13px; }
+  .devoluciones p {
+    font-size: 13px; }
+  .irAlTop a {
+    font-size: 15px; }
+  .row-grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .ubicacion-local,
+  .telefono-contacto,
+  .redes-sociales {
+    flex-basis: 50%; }
+    .ubicacion-local p,
+    .telefono-contacto p,
+    .redes-sociales p {
+      font-size: 15px; } }
+
+.redes {
+  display: flex;
+  justify-content: center; }
 
 /*Mediaquery 320px*/
 @media (max-width: 320px) {
@@ -490,8 +543,7 @@ footer {
     color: white;
     text-decoration: none;
     font-size: 15px;
-    padding-left: 25px;
-    /* Ajusta el valor según tus necesidades */ }
+    padding-left: 25px; }
   .grid-section-liquidaciontotal h1 {
     font-size: 35px;
     color: white;
