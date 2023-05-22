@@ -157,9 +157,7 @@ footer {
   align-items: center; }
 
 .lista li {
-  /* Estilos de los elementos de la lista */
   opacity: 0;
-  /* Inicialmente ocultos */
   transform: translateY(-20px);
   /* Desplazamiento hacia arriba */
   animation: fadeInUp 0.5s forwards;
