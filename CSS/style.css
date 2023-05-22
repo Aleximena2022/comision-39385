@@ -389,9 +389,7 @@ footer {
       font-size: 35px; }
   .imagen-achicada {
     width: 450px;
-    /* Establece el ancho deseado */
-    height: auto;
-    /* El alto se ajustará automáticamente para mantener la proporción */ } }
+    height: auto; } }
 
 /*mediaquery 1440*/
 @media (max-width: 1440px) {
@@ -414,8 +412,10 @@ footer {
       color: white;
       text-decoration: none;
       font-size: 25px; }
+  .contenedor-catalogo {
+    justify-content: space-around; }
   .imagen-achicada {
-    width: 342px;
+    width: 340px;
     height: auto; } }
 
 .tituloOfertas p {
@@ -464,8 +464,10 @@ footer {
       color: white;
       text-decoration: none;
       font-size: 18px; }
+  .contenedor-catalogo {
+    justify-content: space-around; }
   .imagen-achicada {
-    width: 250px;
+    width: 340px;
     height: auto; }
   .tituloOfertas p {
     font-size: 45px;
@@ -588,8 +590,10 @@ footer {
     overflow: hidden;
     background-color: black;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center; }
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-justify: auto; }
     header img {
       width: 100px;
       height: 50px; }
@@ -599,13 +603,14 @@ footer {
     display: flex;
     flex-direction: column;
     list-style: none;
-    gap: 15px;
-    text-align: right; }
-  .lista li a {
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-    padding-left: 25px; }
+    gap: 15px; }
+    .lista ul {
+      padding: 0%; }
+      .lista ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        padding-left: 25px; }
   .grid-section-liquidaciontotal h1 {
     font-size: 35px;
     color: white;
@@ -690,73 +695,43 @@ footer {
     text-shadow: 3px 3px 5px red; }
   .section_1 {
     max-width: 100%;
-    /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
-    text-align: center;
-    /* Centra el contenido horizontalmente */ }
+    text-align: center; }
   .section_1 img {
     width: 50%;
-    /* Ajusta el ancho de la imagen al 100% de la sección */
     height: auto;
-    /* Ajusta la altura de la imagen de forma proporcional al ancho */
-    max-width: 100%;
-    /* Limita el ancho máximo de la imagen al tamaño de la sección */ }
+    max-width: 100%; }
   .section_3 {
     max-width: 100%;
-    /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
-    text-align: center;
-    /* Centra el contenido horizontalmente */ }
-  .section_3 img {
-    width: 50%;
-    /* Ajusta el ancho de la imagen al 100% de la sección */
-    height: auto;
-    /* Ajusta la altura de la imagen de forma proporcional al ancho */
-    max-width: 100%;
-    /* Limita el ancho máximo de la imagen al tamaño de la sección */ }
+    text-align: center; }
+    .section_3 img {
+      width: 50%;
+      height: auto;
+      max-width: 100%; }
   .section_4 {
     max-width: 100%;
-    /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
-    text-align: center;
-    /* Centra el contenido horizontalmente */ }
-  .section_4 img {
-    width: 50%;
-    /* Ajusta el ancho de la imagen al 100% de la sección */
-    height: auto;
-    /* Ajusta la altura de la imagen de forma proporcional al ancho */
-    max-width: 100%;
-    /* Limita el ancho máximo de la imagen al tamaño de la sección */ }
+    text-align: center; }
+    .section_4 img {
+      width: 50%;
+      height: auto;
+      max-width: 100%; }
   .section_5 {
     max-width: 100%;
-    /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
-    text-align: center;
-    /* Centra el contenido horizontalmente */ }
-  .section_5 img {
-    width: 50%;
-    /* Ajusta el ancho de la imagen al 100% de la sección */
-    height: auto;
-    /* Ajusta la altura de la imagen de forma proporcional al ancho */
-    max-width: 100%;
-    /* Limita el ancho máximo de la imagen al tamaño de la sección */ }
+    text-align: center; }
+    .section_5 img {
+      width: 50%;
+      height: auto;
+      max-width: 100%; }
   .section_6 {
     max-width: 100%;
-    /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
-    text-align: center;
-    /* Centra el contenido horizontalmente */ }
-  .section_6 img {
-    width: 50%;
-    /* Ajusta el ancho de la imagen al 100% de la sección */
-    height: auto;
-    /* Ajusta la altura de la imagen de forma proporcional al ancho */
-    max-width: 100%;
-    /* Limita el ancho máximo de la imagen al tamaño de la sección */ }
+    text-align: center; }
+    .section_6 img {
+      width: 50%;
+      height: auto;
+      max-width: 100%; }
   .section_7 {
     max-width: 100%;
-    /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
-    text-align: center;
-    /* Centra el contenido horizontalmente */ }
-  .section_7 img {
-    width: 50%;
-    /* Ajusta el ancho de la imagen al 100% de la sección */
-    height: auto;
-    /* Ajusta la altura de la imagen de forma proporcional al ancho */
-    max-width: 100%;
-    /* Limita el ancho máximo de la imagen al tamaño de la sección */ } }
+    text-align: center; }
+    .section_7 img {
+      width: 50%;
+      height: auto;
+      max-width: 100%; } }

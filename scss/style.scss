@@ -301,8 +301,8 @@ footer {
     }
 
 .imagen-achicada {
-    width: 450px; /* Establece el ancho deseado */
-    height: auto; /* El alto se ajustará automáticamente para mantener la proporción */
+    width: 450px; 
+    height: auto; 
     }
 } 
 
@@ -342,10 +342,16 @@ header{
     }
 }
 
+.contenedor-catalogo{
+    justify-content: space-around;
+}
+
+
 .imagen-achicada {
-    width: 342px; 
+    width: 340px; 
     height: auto; 
 }
+
 }
 
 .tituloOfertas{
@@ -416,11 +422,16 @@ header{
     }
 }
 
+.contenedor-catalogo{
+    justify-content: space-around;
+}
+
 
 .imagen-achicada {
-    width: 250px; 
+    width: 340px; 
     height: auto; 
 }
+
 
 
 
@@ -522,13 +533,6 @@ header{
 }
 
 
-
-
-// .imagen-achicada {
-//     width: 130px; 
-//     height: auto; 
-// }
-
 .contenedor-envios{
     overflow: hidden;
     p{
@@ -536,31 +540,6 @@ header{
         gap:5px
     }
 }
-
-// .contenedor-catalogo{
-//     width: 100%;
-//     background:white;
-//     display: flex;
-//     flex-wrap: wrap;
-//     height: fit-content;
-//     text-align: center;
-//     font-size: 30px;
-        
-// }
-
-// .contenedor-img{
-//     display: flex;
-//     img{
-//     width: 245px;
-//     height: 145px;
-//     flex-basis:auto;
-// }
-// }
-
-
-
-
-
 
 .tituloOfertas{
     p{
@@ -593,19 +572,6 @@ header{
 .cardquinta img {
     max-width: 100%;
 }
-
-// @media (max-width: 768px) {
-//     .cardprincipal,
-//     .cardsegunda,
-//     .cardtercera,
-//     .cardcuarta,
-//     .cardquinta {
-//         flex-basis: calc(50% - 20px);
-//     }
-// }
-
-
-
 
 .envios{
     P{
@@ -662,8 +628,10 @@ header{
         overflow: hidden;
         background-color: black;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content:center;
         align-items: center;
+        text-align: center;
+        text-justify: auto;
         img{
             width: 100px;
             height: 50px;
@@ -679,21 +647,24 @@ header{
         flex-direction: column;
         list-style: none;
         gap: 15px;
-        text-align: right;
+        ul{
+            padding: 0%;
+            li a {
+                color: white;
+                text-decoration: none;
+                font-size: 15px;
+                padding-left: 25px; 
+            }
+        }
     }
-    
-    .lista li a {
-        color: white;
-        text-decoration: none;
-        font-size: 15px;
-        padding-left: 25px; 
-    }
+
+
+
     .grid-section-liquidaciontotal{
             h1{
                 font-size: 35px;
                 color: white;
                 text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-
             }
     }
     
@@ -712,9 +683,6 @@ header{
         }
     }
     
-    
-    
-    
     .imagen-achicada {
         width: 130px; 
         height: auto; 
@@ -730,16 +698,12 @@ header{
     .sectionCatalog{
         display: none;
     }
-
-
     .tituloOfertas{
         p{
             font-size: 25px;
         }
     }
     
-
-
     .card{
         width: 200px;
         height: 150px;
@@ -762,8 +726,6 @@ header{
             border-radius: 10px;
             }
         }
-
-    
     .cardprincipal {
         display: none;
         }
@@ -788,6 +750,7 @@ header{
             font-size: 13px;
         }
     }
+
 
     .irAlTop{
         a{
@@ -837,73 +800,58 @@ header{
         }
     }
 
-    .section_1{
-        max-width: 100%; /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
-        text-align: center; /* Centra el contenido horizontalmente */
+                .section_1{
+                    max-width: 100%;
+                    text-align: center; 
     }
-      
-    .section_1 img {
-                width: 50%; /* Ajusta el ancho de la imagen al 100% de la sección */
-                height: auto; /* Ajusta la altura de la imagen de forma proporcional al ancho */
-                max-width: 100%; /* Limita el ancho máximo de la imagen al tamaño de la sección */
+                .section_1 img {
+                    width: 50%; 
+                    height: auto; 
+                    max-width: 100%; 
         }
-
-        .section_3{
-            max-width: 100%; /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
-            text-align: center; /* Centra el contenido horizontalmente */
+                .section_3{
+                    max-width: 100%; 
+                    text-align: center;
+                        img {
+                        width: 50%; 
+                        height: auto; 
+                        max-width: 100% 
         }
-          
-        .section_3 img {
-                    width: 50%; /* Ajusta el ancho de la imagen al 100% de la sección */
-                    height: auto; /* Ajusta la altura de la imagen de forma proporcional al ancho */
-                    max-width: 100%; /* Limita el ancho máximo de la imagen al tamaño de la sección */
             }    
-
-            .section_4{
-                max-width: 100%; /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
-                text-align: center; /* Centra el contenido horizontalmente */
+                .section_4{
+                    max-width: 100%;
+                    text-align: center;
+                        img {
+                        width: 50%;
+                        height: auto;
+                        max-width: 100%;
+                    } 
             }
-            
-            .section_4 img {
-                        width: 50%; /* Ajusta el ancho de la imagen al 100% de la sección */
-                        height: auto; /* Ajusta la altura de la imagen de forma proporcional al ancho */
-                        max-width: 100%; /* Limita el ancho máximo de la imagen al tamaño de la sección */
-                } 
-                .section_5{
-                    max-width: 100%; /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
-                    text-align: center; /* Centra el contenido horizontalmente */
-                }
-                
-                .section_5 img {
-                            width: 50%; /* Ajusta el ancho de la imagen al 100% de la sección */
-                            height: auto; /* Ajusta la altura de la imagen de forma proporcional al ancho */
-                            max-width: 100%; /* Limita el ancho máximo de la imagen al tamaño de la sección */
-                    }     
-                    .section_6{
-                        max-width: 100%; /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
-                        text-align: center; /* Centra el contenido horizontalmente */
-                    }
-                    
-                    .section_6 img {
-                                width: 50%; /* Ajusta el ancho de la imagen al 100% de la sección */
-                                height: auto; /* Ajusta la altura de la imagen de forma proporcional al ancho */
-                                max-width: 100%; /* Limita el ancho máximo de la imagen al tamaño de la sección */
+                        .section_5{
+                            max-width: 100%;
+                            text-align: center;
+                            img {
+                                width: 50%;
+                                height: auto;
+                                max-width: 100%;
                         }
-                        .section_7{
-                            max-width: 100%; /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
-                            text-align: center; /* Centra el contenido horizontalmente */
-                        }
-                        
-                        .section_7 img {
-                                    width: 50%; /* Ajusta el ancho de la imagen al 100% de la sección */
-                                    height: auto; /* Ajusta la altura de la imagen de forma proporcional al ancho */
-                                    max-width: 100%; /* Limita el ancho máximo de la imagen al tamaño de la sección */
+                    }  
+                        .section_6{
+                            max-width: 100%;
+                            text-align: center;
+                            img {
+                                width: 50%;
+                                height: auto;
+                                max-width: 100%;
                             }
-
-
-
-
-
-
-
+                    }
+                        .section_7{
+                            max-width: 100%;
+                            text-align: center;
+                            img {
+                                width: 50%;
+                                height: auto;
+                                max-width: 100%;
+                        }
+                    }
 }
