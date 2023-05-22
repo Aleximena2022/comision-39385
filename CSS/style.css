@@ -1,0 +1,752 @@
+@charset "UTF-8";
+/*Variables*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.boton {
+  display: grid;
+  background-color: red;
+  border: none;
+  padding: 10px 20px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px; }
+  .boton a {
+    text-decoration: none;
+    color: white; }
+
+.main_ofertas {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+  grid-template-areas: "p5 p1 p1 p4" "p8  p2 p3 p9" "p6 p10 p10 p7";
+  gap: 5px; }
+
+.section_1 {
+  grid-area: p3;
+  overflow: hidden;
+  text-align: center; }
+  .section_1 img {
+    object-fit: cover;
+    width: 40%;
+    height: 70%; }
+
+.section_2 {
+  grid-area: p1;
+  justify-self: center;
+  align-self: center;
+  font-size: 50px;
+  text-align: center; }
+  .section_2 h2 {
+    letter-spacing: 20px;
+    font-size: 60px; }
+
+.section_3 {
+  grid-area: p2;
+  overflow: hidden;
+  text-align: center; }
+  .section_3 img {
+    object-fit: cover;
+    width: 40%;
+    height: 70%; }
+
+.section_4 {
+  grid-area: p4;
+  overflow: hidden;
+  text-align: center; }
+  .section_4 img {
+    object-fit: cover;
+    width: 65%;
+    height: 80%; }
+
+.section_5 {
+  grid-area: p5;
+  overflow: hidden;
+  text-align: center; }
+  .section_5 img {
+    object-fit: cover;
+    width: 53%;
+    height: 85%; }
+
+.section_6 {
+  grid-area: p6;
+  overflow: hidden;
+  text-align: center; }
+  .section_6 img {
+    object-fit: cover;
+    width: 53%;
+    height: 75%; }
+
+.section_7 {
+  grid-area: p7;
+  overflow: hidden;
+  text-align: center; }
+  .section_7 img {
+    object-fit: cover;
+    width: 53%;
+    height: 55%; }
+
+.section_8 {
+  grid-area: p8;
+  justify-self: center;
+  align-self: center;
+  text-align: center; }
+  .section_8 h2 {
+    letter-spacing: 20px;
+    font-size: 30px;
+    color: red; }
+
+.section_9 {
+  grid-area: p9;
+  justify-self: center;
+  align-self: center;
+  text-align: center; }
+  .section_9 h2 {
+    letter-spacing: 20px;
+    font-size: 30px;
+    color: violet; }
+
+.section_10 {
+  grid-area: p10;
+  justify-self: center;
+  align-self: center;
+  font-size: 50px;
+  text-align: center; }
+  .section_10 h2 {
+    letter-spacing: 20px;
+    font-size: 60px;
+    color: blue; }
+
+footer {
+  background-color: black;
+  font-size: 30px;
+  color: white;
+  padding-bottom: 2%;
+  padding-top: 2%; }
+
+.ubicacion {
+  grid-column: 1; }
+  .ubicacion a {
+    margin: 1px 1px 1px 100px; }
+
+.telefono {
+  grid-column: 2; }
+  .telefono p {
+    text-align: center; }
+
+.redes {
+  display: grid;
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: center; }
+  .redes p {
+    text-align: center; }
+  .redes ul li {
+    margin-right: 70px; }
+
+.redes-sociales ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  gap: 3%;
+  align-items: center; }
+
+.lista li {
+  opacity: 0;
+  transform: translateY(-20px);
+  /* Desplazamiento hacia arriba */
+  animation: fadeInUp 0.5s forwards;
+  animation-delay: 0.2s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.contenedor-logo {
+  display: flex;
+  height: 90px;
+  padding-left: 2%; }
+
+.contenedor-lista {
+  display: flex;
+  align-items: center; }
+
+.lista {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 70px;
+  padding-right: 150px; }
+  .lista li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px; }
+
+.grid-section-liquidaciontotal {
+  display: grid;
+  background-image: url(../assets/img/seccion_liquidacion_del_index/zapas_todas.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(5, auto); }
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  grid-column: 2 / 4;
+  grid-row: 2 / 4; }
+
+.container_ver {
+  display: grid;
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+  justify-content: center;
+  align-items: center; }
+
+.sectionEnvioGratis {
+  display: flex;
+  background-color: black;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  width: 100%;
+  height: 80px;
+  letter-spacing: 7px; }
+
+.contenedor-catalogo {
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  text-align: center;
+  font-size: 40px; }
+
+.talles-adultos {
+  height: 900px; }
+
+.contenedor-imagenes-hombres {
+  display: flex;
+  flex-wrap: wrap; }
+
+.contenedor-imagenes-mujeres {
+  display: flex;
+  flex-wrap: wrap; }
+
+.contenedor-imagenes-niños {
+  display: flex;
+  flex-wrap: wrap; }
+
+.catalogo-seccion {
+  background-color: grey; }
+
+.contenedor-envios {
+  font-size: 0.5em; }
+
+.contenedor-envios {
+  display: flex;
+  flex-wrap: wrap; }
+
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.row {
+  display: flex;
+  align-items: center; }
+
+.sectionCatalog {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1%;
+  padding-top: 1%; }
+
+.hombre {
+  text-align: center;
+  font-size: 40px; }
+
+.mujer {
+  text-align: center;
+  font-size: 40px; }
+
+.niños {
+  text-align: center;
+  font-size: 40px; }
+
+.card {
+  width: 10%;
+  height: 300px;
+  border: 3px solid white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: serif;
+  margin: 40px 40px 30px 30px;
+  background-color: white; }
+  .card div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; }
+  .card img {
+    width: 100%;
+    border-radius: 15px; }
+
+.card.card1.transform-effect {
+  transform: scale(0.9); }
+
+.tituloOfertas p {
+  font-size: 75px;
+  text-align: center; }
+
+.sectionInfo {
+  align-items: center;
+  text-align: center; }
+
+.containerInfo {
+  background-color: #F2F47F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px; }
+
+.irAlTop {
+  display: flex;
+  background-color: black;
+  justify-content: end; }
+  .irAlTop a {
+    color: red;
+    text-decoration: none;
+    font-size: 30px; }
+
+footer {
+  background-color: black;
+  padding: 20px; }
+
+.row-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.ubicacion-local,
+.telefono-contacto,
+.redes-sociales {
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 10px; }
+
+.card {
+  transition: transform 0.3s ease; }
+
+.card:hover {
+  transform: scale(1.1); }
+
+/*INDEX*/
+/*mediaquery 2560 4K*/
+@media (max-width: 2560px) {
+  header {
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    header img {
+      width: 200px;
+      height: 100px; }
+  .lista {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 35px;
+    padding-right: 100px; }
+    .lista li a {
+      color: white;
+      text-decoration: none;
+      font-size: 35px; }
+  .imagen-achicada {
+    width: 450px;
+    /* Establece el ancho deseado */
+    height: auto;
+    /* El alto se ajustará automáticamente para mantener la proporción */ } }
+
+/*mediaquery 1440*/
+@media (max-width: 1440px) {
+  header {
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    header img {
+      width: 200px;
+      height: 100px; }
+  .lista {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 25px;
+    padding-right: 100px; }
+    .lista li a {
+      color: white;
+      text-decoration: none;
+      font-size: 25px; }
+  .imagen-achicada {
+    width: 342px;
+    height: auto; } }
+
+.tituloOfertas p {
+  font-size: 45px;
+  text-shadow: 3px 3px 5px forestgreen; }
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.cardprincipal,
+.cardsegunda,
+.cardtercera,
+.cardcuarta,
+.cardquinta {
+  flex-basis: calc(20% - 20px);
+  margin-bottom: 20px;
+  text-align: center; }
+
+.cardprincipal img,
+.cardsegunda img,
+.cardtercera img,
+.cardcuarta img,
+.cardquinta img {
+  max-width: 100%; }
+
+/*mediaquery 1024*/
+@media (max-width: 1024px) {
+  header {
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    header img {
+      width: 130px;
+      height: 80px; }
+  .lista {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 25px;
+    padding-right: 100px; }
+    .lista li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px; }
+  .imagen-achicada {
+    width: 250px;
+    height: auto; }
+  .tituloOfertas p {
+    font-size: 45px;
+    text-shadow: 3px 3px 5px forestgreen; }
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .cardprincipal,
+  .cardsegunda,
+  .cardtercera,
+  .cardcuarta,
+  .cardquinta {
+    flex-basis: calc(20% - 20px);
+    margin-bottom: 20px;
+    text-align: center; }
+  .cardprincipal img,
+  .cardsegunda img,
+  .cardtercera img,
+  .cardcuarta img,
+  .cardquinta img {
+    max-width: 100%; } }
+
+/*mediaquery 768px*/
+@media (max-width: 780px) {
+  header {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    header img {
+      width: 100px;
+      height: 50px; }
+  .lista {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+    padding-right: 100px;
+    overflow: hidden; }
+    .lista li a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px; }
+  .grid-section-liquidaciontotal h1 {
+    font-size: 35px;
+    color: black;
+    text-shadow: 3px 3px 5px white; }
+  .boton {
+    display: grid;
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px; }
+    .boton a {
+      text-decoration: none;
+      color: white; }
+  .contenedor-envios {
+    overflow: hidden; }
+    .contenedor-envios p {
+      font-size: 15px;
+      gap: 5px; }
+  .tituloOfertas p {
+    font-size: 45px;
+    text-shadow: 3px 3px 5px forestgreen; }
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .cardprincipal,
+  .cardsegunda,
+  .cardtercera,
+  .cardcuarta,
+  .cardquinta {
+    flex-basis: calc(20% - 20px);
+    margin-bottom: 20px;
+    text-align: center; }
+  .cardprincipal img,
+  .cardsegunda img,
+  .cardtercera img,
+  .cardcuarta img,
+  .cardquinta img {
+    max-width: 100%; }
+  .envios P {
+    font-size: 15px; }
+  .tarjetaCredito p {
+    font-size: 13px; }
+  .devoluciones p {
+    font-size: 13px; }
+  .irAlTop a {
+    font-size: 15px; }
+  .row-grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .ubicacion-local,
+  .telefono-contacto,
+  .redes-sociales {
+    flex-basis: 50%; }
+    .ubicacion-local p,
+    .telefono-contacto p,
+    .redes-sociales p {
+      font-size: 15px; } }
+
+.redes {
+  display: flex;
+  justify-content: center; }
+
+/*Mediaquery 320px*/
+@media (max-width: 320px) {
+  header {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    header img {
+      width: 100px;
+      height: 50px; }
+  .navbar {
+    display: flex; }
+  .lista {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 15px;
+    text-align: right; }
+  .lista li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 25px; }
+  .grid-section-liquidaciontotal h1 {
+    font-size: 35px;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); }
+  .boton {
+    display: grid;
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px; }
+    .boton a {
+      text-decoration: none;
+      color: white; }
+  .imagen-achicada {
+    width: 130px;
+    height: auto; }
+  .contenedor-envios p {
+    font-size: 13px;
+    gap: 5px; }
+  .sectionCatalog {
+    display: none; }
+  .tituloOfertas p {
+    font-size: 25px; }
+  .card {
+    width: 200px;
+    height: 150px;
+    border: 3px solid black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: serif;
+    margin: 20px 20px 20px 20px;
+    background-color: white; }
+    .card div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px; }
+    .card img {
+      width: 100px;
+      height: 50px;
+      border-radius: 10px; }
+  .cardprincipal {
+    display: none; }
+  .cardsegunda {
+    display: none; }
+  .envios P {
+    font-size: 15px; }
+  .tarjetaCredito p {
+    font-size: 13px; }
+  .devoluciones p {
+    font-size: 13px; }
+  .irAlTop a {
+    font-size: 20px; }
+  .row-grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .ubicacion-local,
+  .telefono-contacto,
+  .redes-sociales {
+    flex-basis: 50%; }
+    .ubicacion-local p,
+    .telefono-contacto p,
+    .redes-sociales p {
+      font-size: 15px; } }
+
+.redes {
+  display: flex;
+  justify-content: center; }
+
+/*PAGE OFERTAS*/
+@media (max-width: 1440px) {
+  .section_2 b h2 {
+    font-size: 35px;
+    text-shadow: 3px 3px 5px forestgreen; }
+  .section_10 b h2 {
+    font-size: 30px;
+    text-shadow: 3px 3px 5px red; }
+  .section_1 {
+    max-width: 100%;
+    /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
+    text-align: center;
+    /* Centra el contenido horizontalmente */ }
+  .section_1 img {
+    width: 50%;
+    /* Ajusta el ancho de la imagen al 100% de la sección */
+    height: auto;
+    /* Ajusta la altura de la imagen de forma proporcional al ancho */
+    max-width: 100%;
+    /* Limita el ancho máximo de la imagen al tamaño de la sección */ }
+  .section_3 {
+    max-width: 100%;
+    /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
+    text-align: center;
+    /* Centra el contenido horizontalmente */ }
+  .section_3 img {
+    width: 50%;
+    /* Ajusta el ancho de la imagen al 100% de la sección */
+    height: auto;
+    /* Ajusta la altura de la imagen de forma proporcional al ancho */
+    max-width: 100%;
+    /* Limita el ancho máximo de la imagen al tamaño de la sección */ }
+  .section_4 {
+    max-width: 100%;
+    /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
+    text-align: center;
+    /* Centra el contenido horizontalmente */ }
+  .section_4 img {
+    width: 50%;
+    /* Ajusta el ancho de la imagen al 100% de la sección */
+    height: auto;
+    /* Ajusta la altura de la imagen de forma proporcional al ancho */
+    max-width: 100%;
+    /* Limita el ancho máximo de la imagen al tamaño de la sección */ }
+  .section_5 {
+    max-width: 100%;
+    /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
+    text-align: center;
+    /* Centra el contenido horizontalmente */ }
+  .section_5 img {
+    width: 50%;
+    /* Ajusta el ancho de la imagen al 100% de la sección */
+    height: auto;
+    /* Ajusta la altura de la imagen de forma proporcional al ancho */
+    max-width: 100%;
+    /* Limita el ancho máximo de la imagen al tamaño de la sección */ }
+  .section_6 {
+    max-width: 100%;
+    /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
+    text-align: center;
+    /* Centra el contenido horizontalmente */ }
+  .section_6 img {
+    width: 50%;
+    /* Ajusta el ancho de la imagen al 100% de la sección */
+    height: auto;
+    /* Ajusta la altura de la imagen de forma proporcional al ancho */
+    max-width: 100%;
+    /* Limita el ancho máximo de la imagen al tamaño de la sección */ }
+  .section_7 {
+    max-width: 100%;
+    /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
+    text-align: center;
+    /* Centra el contenido horizontalmente */ }
+  .section_7 img {
+    width: 50%;
+    /* Ajusta el ancho de la imagen al 100% de la sección */
+    height: auto;
+    /* Ajusta la altura de la imagen de forma proporcional al ancho */
+    max-width: 100%;
+    /* Limita el ancho máximo de la imagen al tamaño de la sección */ } }
