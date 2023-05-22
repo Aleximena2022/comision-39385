@@ -5,6 +5,20 @@
 @import "./layout/main-ofertas";
 @import "./layout/footer";
 
+header{
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 200px;
+        height: 100px;
+        
+        
+
+    }
+}
 
 .lista li {
 
