@@ -855,3 +855,56 @@ header{
                         }
                     }
 }
+
+
+
+/*mediaquery 768*/
+@media(max-width:768px){
+    .section_2{
+        b{
+            h2{
+                font-size: 20px;
+                text-shadow: 3px 3px 5px forestgreen;
+            }
+        }
+    }
+    .section_10{
+        b{
+            h2{
+                font-size: 15px;
+                text-shadow: 3px 3px 5px red;
+            }
+        }
+    }
+}
+
+
+@media(max-width:320px){
+    .section_2{
+        display: none;
+    }
+    .section_10{
+        padding: 80px;
+        b{
+            h2{
+                font-size: 15px;
+                text-shadow: 3px 3px 5px red;
+            }
+        }
+    }
+
+    .section_8{
+        display: none;
+    }
+
+    .section_9{
+        display: none;
+    }
+
+
+
+
+
+
+
+}
