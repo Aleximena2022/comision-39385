@@ -254,7 +254,7 @@ footer {
 
 
 
-
+/*INDEX*/
 /*mediaquery 2560 4K*/
 @media(max-width:2560px){
 
@@ -798,9 +798,25 @@ header{
             font-size: 15px;
         }
         }
-    }
+}
 
     .redes{
         display: flex;
         justify-content: center;
     }
+
+
+/*PAGE OFERTAS*/
+@media(max-width:1440px){
+
+    .section_1 {
+        max-width: 100%; /* Ajusta el ancho máximo de la sección al tamaño de la ventana */
+        text-align: center; /* Centra el contenido horizontalmente */
+      }
+      
+      .section_1 img {
+        width: 50%; /* Ajusta el ancho de la imagen al 100% de la sección */
+        height: auto; /* Ajusta la altura de la imagen de forma proporcional al ancho */
+        max-width: 100%; /* Limita el ancho máximo de la imagen al tamaño de la sección */
+      }
+}
