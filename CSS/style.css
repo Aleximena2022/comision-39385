@@ -387,8 +387,10 @@ footer {
       color: white;
       text-decoration: none;
       font-size: 35px; }
+  .contenedor-catalogo {
+    justify-content: space-between; }
   .imagen-achicada {
-    width: 450px;
+    width: 550px;
     height: auto; } }
 
 /*mediaquery 1440*/
