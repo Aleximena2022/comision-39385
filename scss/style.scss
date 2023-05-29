@@ -909,10 +909,12 @@ header{
         display: none;
     }
 
+}
 
 
 
-
-
-
+@media(max-width:320px){
+    .section_10 {
+        display: none;
+    }
 }
