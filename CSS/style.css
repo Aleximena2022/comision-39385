@@ -597,93 +597,79 @@ footer {
   .lista li {
     margin: 5px 0; } }
 
-.grid-section-liquidaciontotal h1 {
-  font-size: 35px;
-  color: white;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); }
-
-.boton {
-  display: grid;
-  background-color: red;
-  border: none;
-  padding: 10px 20px;
-  font-size: 20px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 3px; }
-  .boton a {
-    text-decoration: none;
-    color: white; }
-
-.imagen-achicada {
-  width: 130px;
-  height: auto; }
-
-.contenedor-envios p {
-  font-size: 13px;
-  gap: 5px; }
-
-.sectionCatalog {
-  display: none; }
-
-.tituloOfertas p {
-  font-size: 25px; }
-
-.card {
-  width: 200px;
-  height: 150px;
-  border: 3px solid black;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  font-family: serif;
-  margin: 20px 20px 20px 20px;
-  background-color: white; }
-  .card div {
+@media (max-width: 320px) {
+  .grid-section-liquidaciontotal h1 {
+    font-size: 35px;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); }
+  .boton {
+    display: grid;
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px; }
+    .boton a {
+      text-decoration: none;
+      color: white; }
+  .imagen-achicada {
+    width: 130px;
+    height: auto; }
+  .contenedor-envios p {
+    font-size: 13px;
+    gap: 5px; }
+  .sectionCatalog {
+    display: none; }
+  .tituloOfertas p {
+    font-size: 25px; }
+  .card {
+    width: 200px;
+    height: 150px;
+    border: 3px solid black;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 3px; }
-  .card img {
-    width: 100px;
-    height: 50px;
-    border-radius: 10px; }
-
-.cardprincipal {
-  display: none; }
-
-.cardsegunda {
-  display: none; }
-
-.envios P {
-  font-size: 15px; }
-
-.tarjetaCredito p {
-  font-size: 13px; }
-
-.devoluciones p {
-  font-size: 13px; }
-
-.irAlTop a {
-  font-size: 20px; }
-
-.row-grid {
-  display: flex;
-  flex-direction: column;
-  text-align: center; }
-
-.ubicacion-local,
-.telefono-contacto,
-.redes-sociales {
-  flex-basis: 50%; }
-  .ubicacion-local p,
-  .telefono-contacto p,
-  .redes-sociales p {
+    font-family: serif;
+    margin: 20px 20px 20px 20px;
+    background-color: white; }
+    .card div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px; }
+    .card img {
+      width: 100px;
+      height: 50px;
+      border-radius: 10px; }
+  .cardprincipal {
+    display: none; }
+  .cardsegunda {
+    display: none; }
+  .envios P {
     font-size: 15px; }
-
-.redes {
-  display: flex;
-  justify-content: center; }
+  .tarjetaCredito p {
+    font-size: 13px; }
+  .devoluciones p {
+    font-size: 13px; }
+  .irAlTop a {
+    font-size: 20px; }
+  .row-grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .ubicacion-local,
+  .telefono-contacto,
+  .redes-sociales {
+    flex-basis: 50%; }
+    .ubicacion-local p,
+    .telefono-contacto p,
+    .redes-sociales p {
+      font-size: 15px; }
+  .redes {
+    display: flex;
+    justify-content: center; } }
 
 /*PAGE OFERTAS*/
 @media (max-width: 1440px) {
