@@ -169,7 +169,6 @@ header {
 .lista li {
   opacity: 0;
   transform: translateY(-20px);
-  /* Desplazamiento hacia arriba */
   animation: fadeInUp 0.5s forwards;
   animation-delay: 0.2s; }
 
@@ -364,6 +363,10 @@ footer {
 
 .card:hover {
   transform: scale(1.1); }
+
+.img-responsive {
+  max-width: 100%;
+  height: auto; }
 
 /*INDEX*/
 /*mediaquery 2560 4K*/
@@ -585,103 +588,98 @@ footer {
   justify-content: center; }
 
 /*Mediaquery 320px*/
-@media (max-width: 320px) {
+@media (max-width: 320px) and (max-width: 320px) {
   header {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    background-color: black;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-justify: auto; }
-    header img {
-      width: 100px;
-      height: 50px; }
-  .navbar {
-    display: flex; }
-  .lista {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    gap: 15px; }
-    .lista ul {
-      padding: 0%; }
-      .lista ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 15px;
-        padding-left: 25px; }
-  .grid-section-liquidaciontotal h1 {
-    font-size: 35px;
-    color: white;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); }
-  .boton {
-    display: grid;
-    background-color: red;
-    border: none;
-    padding: 10px 20px;
-    font-size: 20px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 3px; }
-    .boton a {
-      text-decoration: none;
-      color: white; }
-  .imagen-achicada {
-    width: 130px;
-    height: auto; }
-  .contenedor-envios p {
-    font-size: 13px;
-    gap: 5px; }
-  .sectionCatalog {
-    display: none; }
-  .tituloOfertas p {
-    font-size: 25px; }
-  .card {
-    width: 200px;
-    height: 150px;
-    border: 3px solid black;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    font-family: serif;
-    margin: 20px 20px 20px 20px;
-    background-color: white; }
-    .card div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 3px; }
-    .card img {
-      width: 100px;
-      height: 50px;
-      border-radius: 10px; }
-  .cardprincipal {
-    display: none; }
-  .cardsegunda {
-    display: none; }
-  .envios P {
-    font-size: 15px; }
-  .tarjetaCredito p {
-    font-size: 13px; }
-  .devoluciones p {
-    font-size: 13px; }
-  .irAlTop a {
-    font-size: 20px; }
-  .row-grid {
-    display: flex;
-    flex-direction: column;
     text-align: center; }
-  .ubicacion-local,
-  .telefono-contacto,
-  .redes-sociales {
-    flex-basis: 50%; }
-    .ubicacion-local p,
-    .telefono-contacto p,
-    .redes-sociales p {
-      font-size: 15px; } }
+  .lista {
+    display: block;
+    padding: 0; }
+  .lista li {
+    margin: 5px 0; } }
+
+.grid-section-liquidaciontotal h1 {
+  font-size: 35px;
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); }
+
+.boton {
+  display: grid;
+  background-color: red;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px; }
+  .boton a {
+    text-decoration: none;
+    color: white; }
+
+.imagen-achicada {
+  width: 130px;
+  height: auto; }
+
+.contenedor-envios p {
+  font-size: 13px;
+  gap: 5px; }
+
+.sectionCatalog {
+  display: none; }
+
+.tituloOfertas p {
+  font-size: 25px; }
+
+.card {
+  width: 200px;
+  height: 150px;
+  border: 3px solid black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: serif;
+  margin: 20px 20px 20px 20px;
+  background-color: white; }
+  .card div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px; }
+  .card img {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px; }
+
+.cardprincipal {
+  display: none; }
+
+.cardsegunda {
+  display: none; }
+
+.envios P {
+  font-size: 15px; }
+
+.tarjetaCredito p {
+  font-size: 13px; }
+
+.devoluciones p {
+  font-size: 13px; }
+
+.irAlTop a {
+  font-size: 20px; }
+
+.row-grid {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+
+.ubicacion-local,
+.telefono-contacto,
+.redes-sociales {
+  flex-basis: 50%; }
+  .ubicacion-local p,
+  .telefono-contacto p,
+  .redes-sociales p {
+    font-size: 15px; }
 
 .redes {
   display: flex;
@@ -762,4 +760,11 @@ footer {
 
 @media (max-width: 320px) {
   .section_10 {
+    display: none; } }
+
+/*PAGINA CONTACTOS*/
+@media (max-width: 320px) {
+  .titulo_Contacto h1 {
+    font-size: 30px; }
+  .mapa {
     display: none; } }
