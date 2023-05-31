@@ -677,6 +677,8 @@ footer {
 
 /*PAGE OFERTAS*/
 @media (max-width: 1440px) {
+  .section_0 {
+    display: none; }
   .section_2 b h2 {
     font-size: 35px;
     text-shadow: 3px 3px 5px forestgreen; }
@@ -728,6 +730,8 @@ footer {
 
 /*mediaquery 768*/
 @media (max-width: 768px) {
+  .section_0 {
+    display: none; }
   .section_2 b h2 {
     font-size: 20px;
     text-shadow: 3px 3px 5px forestgreen; }
@@ -736,20 +740,28 @@ footer {
     text-shadow: 3px 3px 5px red; } }
 
 @media (max-width: 320px) {
+  .main_ofertas {
+    display: flex;
+    flex-wrap: wrap; }
+  .section_0 {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    justify-content: center; }
+    .section_0 b h2 {
+      font-size: 15px;
+      text-shadow: 3px 3px 5px red; }
   .section_2 {
     display: none; }
   .section_10 {
-    padding: 80px; }
+    display: none;
+    padding: 0; }
     .section_10 b h2 {
       font-size: 15px;
       text-shadow: 3px 3px 5px red; }
   .section_8 {
     display: none; }
   .section_9 {
-    display: none; } }
-
-@media (max-width: 320px) {
-  .section_10 {
     display: none; } }
 
 /*PAGINA CONTACTOS*/

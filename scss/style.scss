@@ -787,6 +787,9 @@ footer {
 
 /*PAGE OFERTAS*/
 @media(max-width:1440px) {
+    .section_0{
+        display: none;
+    }
     .section_2 {
         b {
             h2 {
@@ -876,6 +879,9 @@ footer {
 
 /*mediaquery 768*/
 @media(max-width:768px) {
+    .section_0{
+        display: none;
+    }
     .section_2 {
         b {
             h2 {
@@ -897,12 +903,30 @@ footer {
 
 
 @media(max-width:320px) {
-    .section_2 {
+    .main_ofertas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section_0 {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+
+        b {
+            h2 {
+                font-size: 15px;
+                text-shadow: 3px 3px 5px red;
+            }
+        }
+    }
+        .section_2 {
         display: none;
     }
 
-    .section_10 {
-        padding: 80px;
+        .section_10 {
+        display: none;
+        padding: 0;
 
         b {
             h2 {
@@ -924,11 +948,6 @@ footer {
 
 
 
-@media(max-width:320px) {
-    .section_10 {
-        display: none;
-    }
-}
 
 
 
