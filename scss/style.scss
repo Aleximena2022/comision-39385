@@ -949,3 +949,14 @@ footer {
 
 
 /*PAGINA CATALOGO*/
+
+@media(max-width:320px) {
+    .contenedor-imagenes-hombres,
+    .contenedor-imagenes-mujeres,
+    .contenedor-imagenes-niños {
+        width: 300px;
+    }
+    .card-body{
+        padding: 0;
+    }
+}
