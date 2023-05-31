@@ -677,6 +677,9 @@ footer {
 
 /*PAGE OFERTAS*/
 @media (max-width: 1440px) {
+  .main_ofertas {
+    padding-top: 50px;
+    padding-bottom: 0px; }
   .section_0 {
     display: none; }
   .section_2 b h2 {
