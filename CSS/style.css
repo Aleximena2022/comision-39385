@@ -368,6 +368,9 @@ footer {
   max-width: 100%;
   height: auto; }
 
+.background_contactos {
+  background-color: #e6f7ff; }
+
 /*INDEX*/
 /*mediaquery 2560 4K*/
 @media (max-width: 2560px) {

@@ -269,7 +269,9 @@ footer {
     height: auto;
 }
 
-
+.background_contactos{
+    background-color: #e6f7ff;
+}
 
 /*INDEX*/
 /*mediaquery 2560 4K*/
@@ -331,13 +333,9 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
         img {
             width: 200px;
             height: 100px;
-
-
-
         }
     }
 
@@ -349,7 +347,6 @@ footer {
         list-style: none;
         gap: 25px;
         padding-right: 100px;
-
         li a {
             color: white;
             text-decoration: none;
@@ -417,9 +414,6 @@ footer {
         img {
             width: 130px;
             height: 80px;
-
-
-
         }
     }
 
@@ -431,7 +425,6 @@ footer {
         list-style: none;
         gap: 25px;
         padding-right: 100px;
-
         li a {
             color: white;
             text-decoration: none;
@@ -444,7 +437,6 @@ footer {
             font-size: 50px;
             color: black;
             text-shadow: 3px 3px 5px white;
-
         }
     }
 
@@ -507,9 +499,6 @@ footer {
             height: 50px;
         }
     }
-
-
-
     .lista {
         display: flex;
         flex-direction: row;
@@ -523,7 +512,6 @@ footer {
                 font-size: 15px;
             }
         }
-
     .grid-section-liquidaciontotal {
         h1 {
             font-size: 35px;
@@ -531,7 +519,6 @@ footer {
             text-shadow: 3px 3px 5px white;
         }
     }
-
     .boton {
         display: grid;
         background-color: red;
@@ -541,14 +528,12 @@ footer {
         text-align: center;
         cursor: pointer;
         border-radius: 3px;
-
             a {
                 text-decoration: none;
                 color: white;
             }
         }
-    
-        .contenedor-envios {
+    .contenedor-envios {
         overflow: hidden;
             p {
                 font-size: 15px;
@@ -562,8 +547,6 @@ footer {
             text-shadow: 3px 3px 5px forestgreen;
         }
     }
-
-
     .box {
         display: flex;
         flex-wrap: wrap;
