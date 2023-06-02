@@ -679,6 +679,61 @@ footer {
     justify-content: center; } }
 
 /*PAGE OFERTAS*/
+@media (max-width: 2560px) {
+  .main_ofertas {
+    padding-top: 50px;
+    padding-bottom: 0px; }
+  .section_0 {
+    display: none; }
+  .section_2 b h2 {
+    font-size: 35px;
+    text-shadow: 3px 3px 5px forestgreen; }
+  .section_10 b h2 {
+    font-size: 30px;
+    text-shadow: 3px 3px 5px red; }
+  .section_1 {
+    max-width: 100%;
+    text-align: center; }
+  .section_1 img {
+    width: 50%;
+    height: auto;
+    max-width: 100%; }
+  .section_3 {
+    max-width: 100%;
+    text-align: center; }
+    .section_3 img {
+      width: 50%;
+      height: auto;
+      max-width: 100%; }
+  .section_4 {
+    max-width: 100%;
+    text-align: center; }
+    .section_4 img {
+      width: 50%;
+      height: auto;
+      max-width: 100%; }
+  .section_5 {
+    max-width: 100%;
+    text-align: center; }
+    .section_5 img {
+      width: 50%;
+      height: auto;
+      max-width: 100%; }
+  .section_6 {
+    max-width: 100%;
+    text-align: center; }
+    .section_6 img {
+      width: 50%;
+      height: auto;
+      max-width: 100%; }
+  .section_7 {
+    max-width: 100%;
+    text-align: center; }
+    .section_7 img {
+      width: 50%;
+      height: auto;
+      max-width: 100%; } }
+
 @media (max-width: 1440px) {
   .main_ofertas {
     padding-top: 50px;
